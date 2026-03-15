@@ -103,7 +103,7 @@ function renderCards(data) {
         </div>
       </div>
       <div class="card-footer">
-        <div class="viewer-count">👁 ${item.viewer_count}</div>
+        <!-- <div class="viewer-count">👁 ${item.viewer_count}</div> -->
         <div class="countdown" data-start-time="${item.startTime}"></div>
       </div>
     `;
