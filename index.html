@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+  <title>Vòng quay 🎡</title>
+  <!-- Telegram Mini App SDK - BẮT BUỘC phải có -->
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Animation hoa rơi -->
+  <div class="petal-container" id="petalContainer"></div>
+
+  <h1>Quay vòng quay 🎡</h1>
+  <h5 class="warning-text">⚠️ Nhớ theo dõi shop rồi mới quay ⚠️</h5>
+
+  <!-- Trạng thái lỗi -->
+  <div id="error-msg" class="error-msg" style="display:none;">
+    😕 Không tải được dữ liệu. Vui lòng thử lại!
+    <br><button onclick="retryFetch()" class="retry-btn">Thử lại</button>
+  </div>
+
+  <!-- Danh sách shop -->
+  <div id="data-list" class="data-list"></div>
+
+  <!-- Trạng thái loading -->
+  <div id="loading" class="loading">
+    <div class="spinner"></div>
+    <span>Đang tải dữ liệu...</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
